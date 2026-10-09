@@ -1,0 +1,668 @@
+{
+  "version": 1,
+  "modules": [
+    {
+      "id": "js-types",
+      "title": "Types, Coercion & Equality",
+      "tagline": "Why [] == ![] is true, and every other coercion trap interviewers love.",
+      "track": "javascript",
+      "estimatedMinutes": 70,
+      "lessons": [
+        {
+          "id": "js-types-typeof",
+          "title": "typeof Quirks & the Type Landscape",
+          "minutes": 15
+        },
+        {
+          "id": "js-types-equality",
+          "title": "== vs === and the Abstract Equality Algorithm",
+          "minutes": 20
+        },
+        {
+          "id": "js-types-truthiness",
+          "title": "Truthiness, Falsiness, NaN & Boxing",
+          "minutes": 15
+        },
+        {
+          "id": "js-types-to-primitive",
+          "title": "Object-to-Primitive Coercion",
+          "minutes": 20
+        }
+      ],
+      "exercises": [
+        {
+          "id": "js-types-ex1",
+          "title": "Coercion puzzles: predict the output",
+          "difficulty": "easy"
+        },
+        {
+          "id": "js-types-ex2",
+          "title": "safeEqual: NaN-aware strict equality",
+          "difficulty": "medium"
+        },
+        {
+          "id": "js-types-ex3",
+          "title": "hasValue: a deep truthiness guard",
+          "difficulty": "medium"
+        },
+        {
+          "id": "js-types-ex4",
+          "title": "miniLooseEqual: reimplement the Abstract Equality core",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": "js-closures",
+      "title": "Scope & Closures",
+      "tagline": "From the loop-var bug to memoize, once, and private state — closures as a power tool.",
+      "track": "javascript",
+      "estimatedMinutes": 70,
+      "lessons": [
+        {
+          "id": "js-closures-scope",
+          "title": "Lexical Scope, var/let/const & the TDZ",
+          "minutes": 15
+        },
+        {
+          "id": "js-closures-mechanics",
+          "title": "Closure Mechanics & the Loop-Var Bug",
+          "minutes": 20
+        },
+        {
+          "id": "js-closures-patterns",
+          "title": "Closures as a Design Tool",
+          "minutes": 20
+        },
+        {
+          "id": "js-closures-pitfalls",
+          "title": "Stale Closures & Memory Retention",
+          "minutes": 15
+        }
+      ],
+      "exercises": [
+        {
+          "id": "js-closures-ex1",
+          "title": "Fix the loop-var bug",
+          "difficulty": "easy"
+        },
+        {
+          "id": "js-closures-ex2",
+          "title": "memoize",
+          "difficulty": "medium"
+        },
+        {
+          "id": "js-closures-ex3",
+          "title": "once",
+          "difficulty": "medium"
+        },
+        {
+          "id": "js-closures-ex4",
+          "title": "Private counter module",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": "js-this",
+      "title": "this & Binding",
+      "tagline": "Four binding rules, one precedence order, and every lost-this bug you'll meet in production.",
+      "track": "javascript",
+      "estimatedMinutes": 70,
+      "lessons": [
+        {
+          "id": "js-this-rules",
+          "title": "The Four Binding Rules & Precedence",
+          "minutes": 20
+        },
+        {
+          "id": "js-this-call-apply-bind",
+          "title": "call, apply & bind",
+          "minutes": 15
+        },
+        {
+          "id": "js-this-arrows",
+          "title": "Arrow Functions & Lexical this",
+          "minutes": 15
+        },
+        {
+          "id": "js-this-wild",
+          "title": "this in the Wild",
+          "minutes": 20
+        }
+      ],
+      "exercises": [
+        {
+          "id": "js-this-ex1",
+          "title": "Predict the this",
+          "difficulty": "easy"
+        },
+        {
+          "id": "js-this-ex2",
+          "title": "myBind: a bind polyfill",
+          "difficulty": "medium"
+        },
+        {
+          "id": "js-this-ex3",
+          "title": "Fix the lost-this callback",
+          "difficulty": "medium"
+        },
+        {
+          "id": "js-this-ex4",
+          "title": "myNew: the new operator, by hand",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": "js-prototypes",
+      "title": "Prototypes & Inheritance",
+      "tagline": "The object model under the hood: chains, new, classes as sugar, and when to compose instead of inherit.",
+      "track": "javascript",
+      "estimatedMinutes": 54,
+      "lessons": [
+        {
+          "id": "js-prototypes-chain",
+          "title": "The Prototype Chain: __proto__ vs prototype",
+          "minutes": 15
+        },
+        {
+          "id": "js-prototypes-new",
+          "title": "new: The Four-Step Algorithm",
+          "minutes": 12
+        },
+        {
+          "id": "js-prototypes-class",
+          "title": "class Is Sugar: Desugaring, Statics, extends/super",
+          "minutes": 15
+        },
+        {
+          "id": "js-prototypes-patterns",
+          "title": "instanceof, Object.create, and Composition over Inheritance",
+          "minutes": 12
+        }
+      ],
+      "exercises": [
+        {
+          "id": "js-prototypes-ex1",
+          "title": "Predict the chain lookups",
+          "difficulty": "easy"
+        },
+        {
+          "id": "js-prototypes-ex2",
+          "title": "Polyfill new",
+          "difficulty": "medium"
+        },
+        {
+          "id": "js-prototypes-ex3",
+          "title": "Implement instanceof",
+          "difficulty": "medium"
+        },
+        {
+          "id": "js-prototypes-ex4",
+          "title": "Refactor a hierarchy to composition",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": "js-event-loop",
+      "title": "The Event Loop",
+      "tagline": "The runtime model behind every interview puzzle: stack, queues, microtasks, and when the browser actually paints.",
+      "track": "javascript",
+      "estimatedMinutes": 54,
+      "lessons": [
+        {
+          "id": "js-event-loop-model",
+          "title": "The Runtime Model: Stack, Heap, Queues",
+          "minutes": 12
+        },
+        {
+          "id": "js-event-loop-microtask",
+          "title": "Microtasks vs Macrotasks: The Exact Ordering Rules",
+          "minutes": 15
+        },
+        {
+          "id": "js-event-loop-rendering",
+          "title": "Rendering Interplay: Where the Browser Paints",
+          "minutes": 12
+        },
+        {
+          "id": "js-event-loop-puzzles",
+          "title": "Ordering Puzzles Dissected + Timer Gotchas",
+          "minutes": 15
+        }
+      ],
+      "exercises": [
+        {
+          "id": "js-event-loop-ex1",
+          "title": "Trace the order",
+          "difficulty": "easy"
+        },
+        {
+          "id": "js-event-loop-ex2",
+          "title": "Nested queues puzzle",
+          "difficulty": "medium"
+        },
+        {
+          "id": "js-event-loop-ex3",
+          "title": "Chunked processor",
+          "difficulty": "medium"
+        },
+        {
+          "id": "js-event-loop-ex4",
+          "title": "Starvation-proof drain",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": "js-async",
+      "title": "Promises & Async/Await",
+      "tagline": "From the thenable contract to production concurrency: chaining, errors, async/await, and the patterns that survive on-call.",
+      "track": "javascript",
+      "estimatedMinutes": 56,
+      "lessons": [
+        {
+          "id": "js-async-states",
+          "title": "Promise States and the Thenable Contract",
+          "minutes": 12
+        },
+        {
+          "id": "js-async-chaining",
+          "title": "Chaining, Error Propagation, Unhandled Rejections",
+          "minutes": 14
+        },
+        {
+          "id": "js-async-await",
+          "title": "async/await: Desugaring, Sequential vs Parallel",
+          "minutes": 14
+        },
+        {
+          "id": "js-async-concurrency",
+          "title": "Concurrency Control: all/race/allSettled/any, Limiters, Retry, Cancellation",
+          "minutes": 16
+        }
+      ],
+      "exercises": [
+        {
+          "id": "js-async-ex1",
+          "title": "Promise.all from scratch",
+          "difficulty": "medium"
+        },
+        {
+          "id": "js-async-ex2",
+          "title": "Concurrency limiter (p-limit)",
+          "difficulty": "hard"
+        },
+        {
+          "id": "js-async-ex3",
+          "title": "Retry with backoff",
+          "difficulty": "medium"
+        },
+        {
+          "id": "js-async-ex4",
+          "title": "AbortController cancellation demo",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "js-modules",
+      "title": "Modules & Modern Patterns",
+      "tagline": "How modern JavaScript is really organized — module semantics, what bundlers do with your code, and the idioms interviewers expect you to write fluently.",
+      "track": "javascript",
+      "estimatedMinutes": 42,
+      "lessons": [
+        {
+          "id": "js-modules-esm-commonjs",
+          "title": "ESM vs CommonJS: Syntax, Live Bindings, and Interop",
+          "minutes": 12
+        },
+        {
+          "id": "js-modules-bundlers",
+          "title": "What Bundlers Actually Do: Tree-Shaking and sideEffects",
+          "minutes": 10
+        },
+        {
+          "id": "js-modules-modern-idioms",
+          "title": "Modern Idioms: Destructuring, Spread, and Immutability",
+          "minutes": 12
+        },
+        {
+          "id": "js-modules-iterators-generators",
+          "title": "Iterators, Generators, and Lazy Sequences",
+          "minutes": 8
+        }
+      ],
+      "exercises": [
+        {
+          "id": "js-modules-ex1",
+          "title": "Live bindings, proven in Node",
+          "difficulty": "easy"
+        },
+        {
+          "id": "js-modules-ex2",
+          "title": "Refactor for tree-shaking",
+          "difficulty": "medium"
+        },
+        {
+          "id": "js-modules-ex3",
+          "title": "Lazy Fibonacci with generators",
+          "difficulty": "medium"
+        },
+        {
+          "id": "js-modules-ex4",
+          "title": "Immutable setIn helper",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": "react-mental-model",
+      "title": "React Mental Model & JSX",
+      "tagline": "JSX is sugar, elements are data, components are functions — the mental model everything else hangs on.",
+      "track": "react",
+      "estimatedMinutes": 36,
+      "lessons": [
+        {
+          "id": "react-mental-model-jsx-desugar",
+          "title": "JSX Desugars to React.createElement",
+          "minutes": 10
+        },
+        {
+          "id": "react-mental-model-identity",
+          "title": "Elements vs Components vs Instances: Identity Matters",
+          "minutes": 10
+        },
+        {
+          "id": "react-mental-model-props",
+          "title": "Props Flow Down; Compose, Don't Configure",
+          "minutes": 8
+        },
+        {
+          "id": "react-mental-model-render-commit",
+          "title": "Render vs Commit: The Two Phases",
+          "minutes": 8
+        }
+      ],
+      "exercises": [
+        {
+          "id": "react-mental-model-ex1",
+          "title": "Desugar this JSX by hand",
+          "difficulty": "easy"
+        },
+        {
+          "id": "react-mental-model-ex2",
+          "title": "Walk a children tree",
+          "difficulty": "medium"
+        },
+        {
+          "id": "react-mental-model-ex3",
+          "title": "Props flow as data: mapProps",
+          "difficulty": "medium"
+        },
+        {
+          "id": "react-mental-model-ex4",
+          "title": "Element identity: descriptions, not instances",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": "react-hooks",
+      "title": "Hooks Deep-Dive",
+      "tagline": "State, effects, and memoization without the hand-waving — closures, batching, and the rules that keep it all sound.",
+      "track": "react",
+      "estimatedMinutes": 42,
+      "lessons": [
+        {
+          "id": "react-hooks-usestate",
+          "title": "useState: Batching and Updater Functions",
+          "minutes": 10
+        },
+        {
+          "id": "react-hooks-useeffect",
+          "title": "useEffect: Closures, Deps, and Cleanup",
+          "minutes": 12
+        },
+        {
+          "id": "react-hooks-memo-refs",
+          "title": "useRef, useMemo, useCallback: What They're Really For",
+          "minutes": 10
+        },
+        {
+          "id": "react-hooks-reducer-custom",
+          "title": "useReducer, Custom Hooks, and the Rules",
+          "minutes": 10
+        }
+      ],
+      "exercises": [
+        {
+          "id": "react-hooks-ex1",
+          "title": "todosReducer as a pure function",
+          "difficulty": "easy"
+        },
+        {
+          "id": "react-hooks-ex2",
+          "title": "useForm logic as a pure reducer",
+          "difficulty": "medium"
+        },
+        {
+          "id": "react-hooks-ex3",
+          "title": "Dependency-array reasoning, checked",
+          "difficulty": "medium"
+        },
+        {
+          "id": "react-hooks-ex4",
+          "title": "Stale closure, plain JavaScript",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": "react-reconciliation",
+      "title": "Reconciliation & Keys",
+      "tagline": "How React decides what stays, what updates, and what gets torn down — and why keys are the hinge everything swings on.",
+      "track": "react",
+      "estimatedMinutes": 42,
+      "lessons": [
+        {
+          "id": "react-reconciliation-diffing",
+          "title": "The Diffing Heuristics",
+          "minutes": 12
+        },
+        {
+          "id": "react-reconciliation-identity",
+          "title": "Element Identity: Preserve vs Remount",
+          "minutes": 10
+        },
+        {
+          "id": "react-reconciliation-keys",
+          "title": "Keys Done Right",
+          "minutes": 12
+        },
+        {
+          "id": "react-reconciliation-edge-cases",
+          "title": "Edge Cases: Fragments and Conditionals",
+          "minutes": 8
+        }
+      ],
+      "exercises": [
+        {
+          "id": "react-reconciliation-ex1",
+          "title": "Implement a tiny reconciler",
+          "difficulty": "medium"
+        },
+        {
+          "id": "react-reconciliation-ex2",
+          "title": "The index-key bug, in plain data",
+          "difficulty": "medium"
+        },
+        {
+          "id": "react-reconciliation-ex3",
+          "title": "Predict: preserve or remount?",
+          "difficulty": "easy"
+        },
+        {
+          "id": "react-reconciliation-ex4",
+          "title": "Keyed children diff with moves",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": "react-performance",
+      "title": "Rendering Performance",
+      "tagline": "Re-renders are cheap until they aren't — learn what triggers them, how to prove they're wasted, and how to cut them.",
+      "track": "react",
+      "estimatedMinutes": 42,
+      "lessons": [
+        {
+          "id": "react-performance-rerender-triggers",
+          "title": "What Actually Triggers a Re-render",
+          "minutes": 10
+        },
+        {
+          "id": "react-performance-memo",
+          "title": "memo, useMemo, useCallback — and Their Costs",
+          "minutes": 12
+        },
+        {
+          "id": "react-performance-profiling",
+          "title": "Profiling: Finding Wasted Renders",
+          "minutes": 10
+        },
+        {
+          "id": "react-performance-splitting",
+          "title": "Code Splitting and Virtualization",
+          "minutes": 10
+        }
+      ],
+      "exercises": [
+        {
+          "id": "react-performance-ex1",
+          "title": "shallowEqual + single-entry memoize",
+          "difficulty": "medium"
+        },
+        {
+          "id": "react-performance-ex2",
+          "title": "Render-cause analyzer",
+          "difficulty": "medium"
+        },
+        {
+          "id": "react-performance-ex3",
+          "title": "Virtualization window math",
+          "difficulty": "easy"
+        },
+        {
+          "id": "react-performance-ex4",
+          "title": "Code-split decision exercise",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "react-state",
+      "title": "State Management",
+      "tagline": "Where state lives decides how fast your app feels — colocation, context splits, external stores, and treating server data like the cache it is.",
+      "track": "react",
+      "estimatedMinutes": 44,
+      "lessons": [
+        {
+          "id": "react-state-colocation",
+          "title": "Colocate: State Lives As Low As Possible",
+          "minutes": 10
+        },
+        {
+          "id": "react-state-context",
+          "title": "Context and Its Re-render Gotcha",
+          "minutes": 12
+        },
+        {
+          "id": "react-state-external-stores",
+          "title": "External Stores: Subscribe and Selectors",
+          "minutes": 12
+        },
+        {
+          "id": "react-state-server-state",
+          "title": "Server State Is a Cache Problem",
+          "minutes": 10
+        }
+      ],
+      "exercises": [
+        {
+          "id": "react-state-ex1",
+          "title": "Selector subscriptions in a tiny store",
+          "difficulty": "medium"
+        },
+        {
+          "id": "react-state-ex2",
+          "title": "Context split, in plain pub/sub",
+          "difficulty": "medium"
+        },
+        {
+          "id": "react-state-ex3",
+          "title": "Stale-while-revalidate cache",
+          "difficulty": "hard"
+        },
+        {
+          "id": "react-state-ex4",
+          "title": "Colocation refactor planner",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "react-capstone",
+      "title": "Capstone: Build a Real App",
+      "tagline": "The canonical frontend take-home: a searchable, filterable, sortable data table — architected, wired, and polished like you'd ship it.",
+      "track": "react",
+      "estimatedMinutes": 34,
+      "lessons": [
+        {
+          "id": "react-capstone-architecture",
+          "title": "App Architecture: Boundaries and State Placement",
+          "minutes": 12
+        },
+        {
+          "id": "react-capstone-data-layer",
+          "title": "The Data Layer: Fetch, Cache, and the Empty States",
+          "minutes": 12
+        },
+        {
+          "id": "react-capstone-polish",
+          "title": "Polish: Accessibility and Keyboard UX",
+          "minutes": 10
+        }
+      ],
+      "exercises": [
+        {
+          "id": "react-capstone-ex1",
+          "title": "Data layer: fetch + cache + dedupe",
+          "difficulty": "medium"
+        },
+        {
+          "id": "react-capstone-ex2",
+          "title": "Filter / sort / search as pure functions",
+          "difficulty": "medium"
+        },
+        {
+          "id": "react-capstone-ex3",
+          "title": "The table component (review-verified)",
+          "difficulty": "medium"
+        },
+        {
+          "id": "react-capstone-ex4",
+          "title": "Detail view + state wiring (review-verified)",
+          "difficulty": "hard"
+        },
+        {
+          "id": "react-capstone-ex5",
+          "title": "A11y / keyboard polish audit (review-verified)",
+          "difficulty": "easy"
+        }
+      ]
+    }
+  ]
+}
