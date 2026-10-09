@@ -1,0 +1,5 @@
+# Approved UI mockups — local reference only, never commit.
+design/
+# QA evidence — hub bookkeeping, never commit.
+qa-evidence/
+__pycache__/
